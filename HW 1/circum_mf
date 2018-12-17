@@ -1,0 +1,9 @@
+CC = gcc 
+DEBUG = -g 
+LFLAGS = -Wall -std=c99 -pedantic $(DEBUG)
+
+circumference : circumference.c
+	$(CC) $(LFLAGS) circumference.c -o find_circum
+
+clean:
+	\rm find_circum
